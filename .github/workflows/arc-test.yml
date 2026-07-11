@@ -1,0 +1,25 @@
+name: ARC Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on:
+      - arc-runner
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Print Information
+        run: |
+          echo "Hello from ARC!"
+          hostname
+          uname -a
+          pwd
+
+      - name: Sleep
+        run: sleep 30
+
+      - name: Done
+        run: echo "Workflow completed successfully!"

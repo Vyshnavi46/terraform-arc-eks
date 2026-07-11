@@ -1,0 +1,10 @@
+githubConfigUrl: "https://github.com/Vyshnavi46/terraform-arc-eks"
+
+githubConfigSecret:
+  github_token: 
+
+runnerScaleSetName: arc-runner
+
+minRunners: 2
+
+maxRunners: 10
